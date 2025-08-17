@@ -1,0 +1,10 @@
+.vs/
+Debug/
+Release/
+x64/
+*.exe
+*.exp
+*.iobj
+*.ipdb
+*.pdb
+*.tlog
