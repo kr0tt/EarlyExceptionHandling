@@ -10,7 +10,7 @@ This example uses `KiUserExceptionDispatcher` & `Wow64PrepareForException` for t
 
 To use it, simply:
 ```
-.\KiUserExceptionDispatcherInjection.exe < YOUR SHELLCODE > < hwbp | page_guard>
+.\KiUserExceptionDispatcherInjection.exe < YOUR SHELLCODE > < hwbp | page_guard >
 ```
 
 ## Resources
