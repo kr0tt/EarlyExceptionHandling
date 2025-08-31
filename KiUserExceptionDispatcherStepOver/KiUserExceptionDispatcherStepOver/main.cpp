@@ -65,5 +65,7 @@ int main() {
 		return -1;
 	}
 	
+	getchar();
+
 	return 0;
 }
