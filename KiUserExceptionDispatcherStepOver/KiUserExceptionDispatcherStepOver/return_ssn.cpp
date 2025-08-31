@@ -26,7 +26,7 @@ DWORD64 ReturnFunctionsSSN(UINT_PTR instructionPointer) {
         return 0x50;
 	}
     
-	return 0x00; // fail misreably 
+	return 0x00; // fail miserably 
 }
 
 DWORD64 ReturnSyscallInstructionAddress(UINT_PTR instructionPointer) {
