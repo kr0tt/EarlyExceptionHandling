@@ -1,16 +1,16 @@
 # Early Exception Handling
 
-This repo contains the examples of two tools that use `KiUserExceptionDispatcher` & `Wow64PrepareForException` for hooking and threadless process injection. You can read more about this here.
+This repo contains the examples of two tools that use `KiUserExceptionDispatcher` & `Wow64PrepareForException` for hooking and threadless process injection. You can read more about this [here](https://kr0tt.github.io/posts/early-exception-handling/).
 ## KiUserExceptionDispatcherStepOver
 
-This example uses `KiUserExceptionDispatcher` & `Wow64PrepareForException` and hardware breakpoints to step over inline hooks in `ntdll.dll`. Please note that the EDR's hook offset from the NT function stub entry is hardcoded and so are the `SSN`'s of the NT functions.
+This example uses `KiUserExceptionDispatcher` & `Wow64PrepareForException` and hardware breakpoints to step over inline hooks in `ntdll.dll`. Please note that the EDR's hook offset from the NT function stub entry is hardcoded and so are the `SSN`s of the NT functions.
 ## KiUserExceptionDispatcherInjection
 
 This example uses `KiUserExceptionDispatcher` & `Wow64PrepareForException` for threadless process injection. It creates a suspended process, injects a payload and shellcode stub and finally resumes the suspended process.  To raise an exception in the remote process, it can either set a hardware breakpoint on the remote thread or set a `PAGE_GUARD` on the remote process entry point.
 
 To use it, simply:
 ```
-.\KiUserExceptionDispatcherInjection.exe < YOUR SHELLCODE > < hwbp | page_guard>
+.\KiUserExceptionDispatcherInjection.exe < YOUR SHELLCODE > < hwbp | page_guard >
 ```
 
 ## Resources
